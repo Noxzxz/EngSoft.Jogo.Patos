@@ -8,10 +8,11 @@ public abstract class Pato {
     //Programação voltada a Interface, utilizando o tipo de interface padrão voaveis em vez de criar uma classe concreta, permitindo trocar a implementação sem alterar a classe pato inteira
     //3.2 Duas variaveis de Instancia
     protected Padrao_Voaveis comportamento_pato;
-    protected Padrão_Pulaveis comportamento_pulaveis;
+    protected Padrao_Pulaveis comportamento_pulaveis;
 
     // 1.5 Método abstrato
-    //método abstrato sem implementação, o que define a classe como abstrata, define um tipo de comportamento que cada pato deve ter
+    //método abstrato sem implementação, o que define a classe como abstrata,
+    // define um tipo de comportamento que cada pato deve ter
     abstract String mostrar();
 	
 	public String nadar()
@@ -24,12 +25,13 @@ public abstract class Pato {
 		comportamento_pato = padrao;		
 	}
 
-    public void setComportamento(Padrão_Pulaveis padrao ){
+    public void setComportamento(Padrao_Pulaveis padrao ){
         comportamento_pulaveis = padrao;
     }
 
     // 1.8 Delegação
-    //Delegação, ocorre quando uma classe delega a execução de uma tarefa para outro objeto
+    //Delegação, ocorre quando uma classe delega a execução de uma tarefa para
+    // outro objeto
 	public String comportamento_pato()
 	{		
 		return comportamento_pato.voar();		

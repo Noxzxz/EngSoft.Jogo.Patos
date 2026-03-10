@@ -1,6 +1,7 @@
 package engsoft.jogo.patos;
 // 2.1.3 Obrigatoriedade de implementar métodos da interface
-//Obrigatoriedade de Implementar Metodos,   implementação de grasnar por meio do implements padrao_grasnar
+//Obrigatoriedade de Implementar Metodos, implementação de grasnar por meio do
+// implements padrao_grasnar
 public class Pato_Ruivo extends Pato implements Padrao_Grasnar{
 
     // 3.1 Construtor

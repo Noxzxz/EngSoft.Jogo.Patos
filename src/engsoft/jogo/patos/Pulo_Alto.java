@@ -1,6 +1,6 @@
 package engsoft.jogo.patos;
 
-public class Pulo_Alto implements Padrão_Pulaveis{
+public class Pulo_Alto implements Padrao_Pulaveis {
 
     private int altura;
 

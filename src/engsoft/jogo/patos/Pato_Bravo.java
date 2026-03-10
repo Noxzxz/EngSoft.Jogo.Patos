@@ -13,8 +13,6 @@ public class Pato_Bravo extends Pato implements  Padrao_Grasnar{
 
     // 1.3 Polimorfismo
     //Polimorfismo, sobrescrevendo o mostrar
-    // 2.1.2 Verificação de assinatura de método
-    //O compilador verifica se o método sobrescrito possui a mesma assinatura do método abstrato da superclasse.
     public String mostrar() {
 		return "Eu sou o Pato Bravo.";
 	}

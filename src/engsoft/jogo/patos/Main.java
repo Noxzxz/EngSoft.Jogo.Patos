@@ -8,8 +8,6 @@ public class Main {
         // uso do operador new para instanciar na memoria o objeto
         // 3.1.3 O que faz o new?
         // Cria um objeto na memória.
-        // 3.1.4 O que acontece na memória?
-        // O objeto é alocado na Heap. A variável recebe uma referência para esse endereço.
         Pato pt = new Pato_Ruivo();
 
 
@@ -18,18 +16,21 @@ public class Main {
         // Apenas declaração de variável de referência. Nenhum objeto foi criado ainda.
 
         // b) Pato pt = new Pato_Ruivo()
-        // Declara a variável e cria o objeto na memória. Agora pt aponta para um objeto válido.
+        // Declara a variável e cria o objeto na memória. Agora pt aponta para um
+        // objeto válido.
 
 
         // 2.2.1 Polimorfismo dinâmic
-        //polimorfismo dinamico, permite que um metodo sobesrcrito seja chamado em tempo de execução, chamando diretamento o objeto e não no tipo referenciado
+        //polimorfismo dinamico, permite que um metodo sobesrcrito seja chamado
+        // em tempo de execução, chamando diretamento o objeto e não no tipo referenciado
 		System.out.println(pt.mostrar());
 		System.out.println(pt.nadar());
 
 		System.out.println(pt.comportamento_pato());
 
         // 2.2.2 Troca de comportamento via setter (Strategy)
-        //Troca de comportamento via Setter(Strategy Pattern), alteração de um objeto em tempo de execução sem a necessidade de mudar diretamente a classe original
+        //Troca de comportamento via Setter(Strategy Pattern), alteração de um
+        // objeto em tempo de execução sem a necessidade de mudar diretamente a classe original
 		pt.setComportamento(new Voar_Foguete());
 		
 		System.out.println(pt.comportamento_pato());
@@ -59,7 +60,11 @@ public class Main {
         //Expansão seria a adição de novas funcionalidades na classe sem alterar o codigo ja existente, como foi feito para o pulo desordenado e pulo alto, não houve nenhuma alteração no codigo original Patos
         //Modificação seria a alteração do codigo ja existente para a conformidade da adição de uma nova função
 		
-		
+
+        //Parte C
+        Coelho co = new Coelho();
+        System.out.println(co.mostrar());
+        System.out.println(co.comportamento_pulaveis());
 	}
 
 }
